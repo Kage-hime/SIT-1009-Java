@@ -39,4 +39,9 @@ public class Circle extends GeometricObject
 
     }
 
+    public double getRadius()
+    {
+        return this.radius;
+    }
+
 }

@@ -1,16 +1,25 @@
-public class Main
-{
-    public static void main(String[] args)
+    import java.util.ArrayList;
+
+    public class Main
     {
-        Dog dog = new Dog("Milo",2,"Brown");
-        Cat cat = new Cat("Whiskey",3,"Brown");
-        Duck duck = new Duck ("Do",1,"White");
-        Pig pig = new Pig ("Po",10,"Pink");
+        public static void main(String[] args)
+        {
+            ArrayList<Animal> AnimalArrayList = new ArrayList<Animal>();
 
-        dog.printinfo();
-        cat.printinfo();
-        duck.printinfo();
-        pig.printinfo();
+            Animal newann = new Dog("Milo",2,"Brown");
+            AnimalArrayList.add(newann);
+            newann = new Cat("Whiskey",3,"Brown");
+            AnimalArrayList.add(newann);
+            newann = new Duck ("Do",1,"White");
+            AnimalArrayList.add(newann);
+            newann = new Pig ("Po",10,"Pink");
+            AnimalArrayList.add(newann);
 
+            for(Animal ann: AnimalArrayList)
+            {
+                ann.printinfo();
+            }
+
+
+        }
     }
-}

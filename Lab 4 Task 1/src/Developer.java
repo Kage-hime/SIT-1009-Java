@@ -19,6 +19,8 @@ public class Developer extends Employee
     @Override
     public void printInfo()
     {
+        System.out.println(String.format("Name of the employee: %s is %d years old. His employee id is: %d. Testing Codes: %d. Developing codes: %d. Salary: %.2f" ,
+                this.name,this.age,this.eid,this.testingCodes,this.developingCodes,calculateSalary()));
 
     }
 }

@@ -19,6 +19,9 @@ public class Designer extends Employee
     @Override
     public void printInfo()
     {
+        System.out.println(String.format("Name of the employee: %s is %d years old. His employee id is: %d. No of designs done: %d. Salary: %.2f" ,
+                this.name,this.age,this.eid,this.noOfDesigns,calculateSalary()));
+
 
     }
 }

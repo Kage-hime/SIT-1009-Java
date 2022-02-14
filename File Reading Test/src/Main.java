@@ -26,11 +26,21 @@ public class Main
             playerScore.add(filescan.nextFloat());
         }
 
+        if(playerlist.size() != playerScore.size())
+        {
+            filescan.close();
+            throw new IllegalArgumentException();
+        }
 
-        for(int i = 0 ; i < playerlist.size() ; i++)
-            System.out.format(playerlist.get(i) + " %.0f\n", playerScore.get(i) );
+        else
+        {
+            for(int i = 0 ; i < playerlist.size() ; i++)
+                System.out.format(playerlist.get(i) + " %.0f\n", playerScore.get(i) );
+
+        }
 
         filescan.close();
+
 
     }
 }

@@ -31,9 +31,11 @@ public class Main
         /** Writing to files to mimic updating of value **/
         FileWriter updatelist = new FileWriter("src\\namelist.txt",true);
         updatelist.write("New Name\n");
+        updatelist.close();
 
         updatelist = new FileWriter("src\\scorelist.txt", true);
-        updatelist.write((50).toString());
+        updatelist.write((String.valueOf(50)));
+        updatelist.close();
 
 
 
@@ -52,7 +54,7 @@ public class Main
         }
 
         filescan.close();
-        updatelist.close();
+
 
 
     }
